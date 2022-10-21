@@ -7,6 +7,10 @@ let cards = d3.select("#cards")
 
             let body = cards
               .append("div")
+              .attr("role", "button")
+              .attr("aria-expanded", "false")
+              .attr("data-bs-toggle", "collapse")
+              .attr("data-bs-target", function(d,i) {return "#card-child-"+i;})
               .attr("class", "card-body");
 
             // Add a title
@@ -20,7 +24,8 @@ let cards = d3.select("#cards")
               .text(function(d) {return d.Audience;});
 
             let sections = cards.append("ul")
-              .attr("class", "list-group list-group-flush collapse");
+              .attr("class", "list-group list-group-flush collapse")
+              .attr("id", function(d,i) {return "card-child-" + i});
 
             // Add Preparation
             common_properties = ["Preparation", "Concentration", "Infusion Rate", "Total Dose / Volume", "Bolus", "Comments"];
