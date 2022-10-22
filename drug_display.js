@@ -11,7 +11,7 @@ let cards = d3.select("#cards")
               .attr("aria-expanded", "false")
               .attr("data-bs-toggle", "collapse")
               .attr("data-bs-target", function(d,i) {return "#card-child-"+i;})
-              .attr("class", "card-body");
+              .attr("class", "card-body individual-selector");
 
             // Add a title
             body.append("h5")

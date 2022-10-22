@@ -5,7 +5,7 @@ let driver_parent = d3.select("#driver-entries")
 
 let driver_bodies = driver_parent
     .append("li")
-    .attr("class", "list-group-item")
+    .attr("class", "list-group-item individual-selector")
     .attr("role", "button")
     .attr("aria-expanded", "false")
     .attr("data-bs-toggle", "collapse")
