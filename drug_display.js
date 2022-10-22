@@ -41,6 +41,6 @@ let cards = d3.select("#cards")
                         .html(function(d) { return d[prop].reduce((prev, cur) => prev + "<li>" + cur + "</li>", ""); });
                 } else {
                     prep.append("div")
-                        .text(function(d) {return d[prop]});
+                        .html(function(d) {return d[prop]});
                 }
             }
