@@ -225,4 +225,12 @@ const full_data = [
         ["0.5mg/kg (0.5ml/kg)"],
         "Consider in asthma or hypotension as alternative to M&M. Titrate to maintain adequate sedation.",
         )
-    ]
+    ];
+
+full_data.sort(function(a,b) {
+    let result =  a.Drug.localeCompare(b.Drug);
+    if (result !== 0) {
+        return result;
+    }
+    return a.Audience.localeCompare(b.Audience);
+});
