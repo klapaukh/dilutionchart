@@ -1,7 +1,8 @@
 class DrugEntry {
-    constructor(name, audience, preparation, concentration, inf_rate, dose, bolus, comments){
+    constructor(name, audience, colour, preparation, concentration, inf_rate, dose, bolus, comments){
         this.Drug = name;
         this.Audience = audience;
+        this.colour = colour;
         this.Preparation = preparation;
         this.Concentration = concentration;
         this["Infusion Rate"] = inf_rate;
@@ -16,6 +17,7 @@ class DrugEntry {
 const full_data = [
     new DrugEntry("Adrenaline",
         "Adult",
+        "rgb(182,159,202)",
         "3mg made to 50ml with 0.9% NaCl",
         "60mcg/ml",
         "5-50mcg/min (5-50ml/hr)",
@@ -30,6 +32,7 @@ const full_data = [
     new DrugEntry(
         "Adrenaline",
         "Paed",
+        "rgb(207,191,219)",
         "3mg made to 50ml with 0.9% NaCl",
         "60mcg/ml",
         "0.1-1mcg/min (0.1-1ml/hr)",
@@ -40,6 +43,7 @@ const full_data = [
     new DrugEntry(
         "Amiodarone",
         "Adult",
+        "rgb(217,217,217)",
         "300mg made to 30ml with 5% Dextrose",
         "10mg/ml",
         "30mL over 30mins (60ml/hr)",
@@ -50,6 +54,7 @@ const full_data = [
     new DrugEntry(
         "GTN",
         "Adult",
+        "rgb(217,99,203)",
         "50mg made to 50ml with 5% Dextrose",
         "1000mcg/ml",
         "10-200mcg/min (0.6 - 12ml/hr)",
@@ -60,6 +65,7 @@ const full_data = [
     new DrugEntry(
         "Labetalol",
         "Adult",
+        "rgb(255,144,255)",
         "60mg (12ml made to 60ml with 0.9 % sodium chloride (48ml))",
         "1mg/1ml",
         "20-60mg/hr (0.3-1ml/min)",
@@ -70,6 +76,7 @@ const full_data = [
     new DrugEntry(
         "Magnesium",
         "Adult",
+        "rgb(255,255,255)",
         "2.47g (10mmol) in 5ml amp & dilute to 20ml with 5% Dextrose",
         "123.5mg/ml = 0.5mmol/ml",
         "20mls over 15mins (80ml/hr)",
@@ -80,6 +87,7 @@ const full_data = [
     new DrugEntry(
         "Magnesium",
         "Paed",
+        "rgb(255,255,255)",
         `<p>2.47g in 5ml amp draw up</p>
         <ul>
         <li>20kg: draw up 2ml (4mmol)</li>
@@ -96,6 +104,7 @@ const full_data = [
     new DrugEntry(
         "Morphine & Midazolam",
         "Adult",
+        "rgb(244,100,0)",
         "Morphine 30mg and Midazolam 30mg made to 30mL with 0.9% NaCl",
         "1mg each/ml",
         "5 - 15mg/hr (5 - 15ml/hr)",
@@ -106,6 +115,7 @@ const full_data = [
     new DrugEntry(
         "Morphine & Midazolam",
         "Paed",
+        "rgb(255,211,175)",
         "Morphine 30mg and Midazolam 30mg made to 30mL with 0.9% NaCl",
         "1mg each/ml",
         "0.1 - 0.2mg/kg/hr (0.1-0.2ml/kg/hr)",
@@ -116,6 +126,7 @@ const full_data = [
     new DrugEntry(
         "Ketamine",
         "Adult Analgesia",
+        "rgb(254,255,0)",
         "<ul><li>80kg plus: 30mg (0.3mL) made to 30mL with 0.9% NaCl</li><li>50 - 80kg: 20mg (0.2mL) made to 30mL with 0.9% NaCl</li></ul>",
         "<ul><li>80kg plus: 1mg/ml</li><li>50 - 80kg: 0.6mg/ml</li></ul>",
         "30mls over 15mins (120ml/hr)",
@@ -126,6 +137,7 @@ const full_data = [
     new DrugEntry(
         "Ketamine",
         "Paed Analgesia",
+        "rgb(254,255,137)",
         `<p>100mg in 100ml of 5% Dextrose</p>
         <ul>
         <li>10kg: 2.5mg/2.5ml</li>
@@ -148,6 +160,7 @@ const full_data = [
     new DrugEntry(
         "Fentanyl & Midazolam",
         "Adult",
+        "rgb(244,100,0)",
         "Fentanyl 300mcg & Midazolam 30mg made to 30ml with 0.9% NaCl",
         "Fentanyl 10mcg/mL & Midazolam 1mg/ml",
         "Fentanyl 50 - 150mcg/hr Midazolam 5 - 15mg/hr (5 - 15ml/hr)",
@@ -158,6 +171,7 @@ const full_data = [
         new DrugEntry(
         "Fentanyl & Midazolam",
         "Paed",
+        "rgb(255,211,175)",
         "Fentanyl 300mcg & Midazolam 30mg made to 30ml with 0.9% NaCl",
         "Fentanyl 10mcg/ml & Midazolam 1mg/ml",
         "Fentanyl 1-2mcg/kg/hr Midazolam 0.1-0.2mg/kg/hr (0.1-0.2ml/kg/hr)",
@@ -168,6 +182,7 @@ const full_data = [
         new DrugEntry(
         "Fentanyl",
         "Adult",
+        "rgb(131,179,230)",
         "200mcg made to 20ml with 0.9% NaCl",
         "10mcg/ml",
         "Fentanyl 50 - 150mcg/hr (5 - 15ml/hr)",
@@ -178,6 +193,7 @@ const full_data = [
         new DrugEntry(
         "Fentanyl & Ketamine",
         "Adult",
+        "rgb(224,243,153)",
         "Fentanyl 200mcg & Ketamine 200mg made to 20ml with 0.9% NaCl",
         "Fentanyl 10mcg/ml & Ketamine 10mg/ml",
         "Fentanyl 50- 150mcg/hr Ketamine 50-150mg/hr (5 - 15ml/hr)",
@@ -188,6 +204,7 @@ const full_data = [
         new DrugEntry(
         "Fentanyl & Ketamine",
         "Paed",
+        "rgb(224,243,153)",
         "Fentanyl 200mcg & Ketamine 200mg made to 20ml with 0.9% NaCl",
         "Fentanyl 10mcg/mL & Ketamine 10mg/ml",
         "Fentanyl 1-2mcg/kg/hr Ketamine 1-2mg/kg/hr (0.1-0.2ml/kg/hr)",
@@ -198,6 +215,7 @@ const full_data = [
         new DrugEntry(
         "Metaraminol",
         "Adult",
+        "rgb(255,144,255)",
         "10mg (1ml) made to 10ml with 0.9% sodium chloride",
         "1mg/1ml",
         "2mg/hr - max 20mg/hr",
@@ -208,6 +226,7 @@ const full_data = [
         new DrugEntry(
         "Ketamine",
         "Adult (RSI ONLY) Sedation",
+        "rgb(254,255,0)",
         "200mg made to 20ml with 0.9% NaCl",
         "10mg/ml",
         "30 - 300mg/hr (3 - 30ml/hr)",
@@ -218,6 +237,7 @@ const full_data = [
         new DrugEntry(
         "Ketamine",
         "Paed (RSI ONLY) Sedation",
+        "rgb(254,255,0)",
         "100mg made to 100ml with 5% Dextrose. Draw into 20 or 50ml syringe",
         "1mg/ml",
         "0.5 - 2.5mg/kg/hr (0.5-2.5ml/kg/hr)",

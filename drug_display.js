@@ -8,18 +8,19 @@ let cards = d3.select("#cards")
             let body = cards
               .append("div")
               .attr("role", "button")
+              .style("background-color", function(d) {return d.colour;})
               .attr("aria-expanded", "false")
               .attr("data-bs-toggle", "collapse")
               .attr("data-bs-target", function(d,i) {return "#card-child-"+i;})
               .attr("class", "card-body individual-selector");
 
             // Add a title
-            body.append("h5")
+            body.append("h4")
               .attr("class", "card-title")
               .text(function(d) {return d.Drug;});
 
             // Add Audience
-            body.append("h6")
+            body.append("h5")
               .attr("class", "card-subtitle mb-2 text-muted")
               .text(function(d) {return d.Audience;});
 

@@ -13,3 +13,7 @@ h1 {
 .individual-selector:hover {
     background-color: rgb(246, 244, 244);
 }
+
+h5.text-muted {
+    color: rgb(73, 73, 73)!important;
+}
