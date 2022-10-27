@@ -8,25 +8,32 @@ class DriverEntry {
 
 const driver_entries = [
     new DriverEntry("Selecting the Drug Library",
-        "After the user has inserted a syringe and selected the correct syringe type, the device display will ask the user if they wish to use the drug library.  The drug library should always be used to ensure conformity with dilution practices and standing orders.  Clinical advice should be sought if an infusion is to be run without use of the drug library (i.e. only under direction from a Medical Director)",
+        `<p>After the user has inserted a syringe and selected the correct syringe type, the device display will ask the user if they wish to use the drug library.  The drug library should always be used to ensure conformity with dilution practices and standing orders.  Clinical advice should be sought if an infusion is to be run without use of the drug library (i.e. only under direction from a Medical Director)<p>
+        <img src="images/driver/SelectingtheDrugLibrary.png" alt="Selecting the drug library" />
+        `,
         undefined),
     new DriverEntry("Adult and Paediatric Drug Libraries",
         `<p>Adult and paediatric drug libraries are separated, as many infusions for paediatrics are administered by the device using a dose per weight calculation.</p>
         <p>When choosing to use the drug library, the device will automatically use the library that it last used.  To change the library, the user must change the Care Unit.  This can be accessed by scrolling up to or down to the bottom of the library and choosing “Change care unit”.</p>
+        <img src="images/driver/ChangeCareUnit.png" alt="Change care unit">
         <p>Users have the choice of:</p>
         <ul>
             <li>WFA - Adults</li>
             <li>WFA - Paediatrics</li>
-        </ul>`,
+        </ul>
+        <img src="images/driver/SelectCareUnit.png" alt="Select care unit">`,
         undefined),
     new DriverEntry("Starting and Stopping an Infusion",
         `<p>Once a drug has been selected, the device will display parameters for an infusion.  Depending on the drug selected, the dose can be adjusted to suit the needs of the patient.</p>
+        <img src="images/driver/StartStopInfusion.png" alt="Starting and stopping an infusion">
         <p>By pushing the Start/Stop button, the infusion can commence.</p>
         <p>Magnesium sulphate and amiodarone are administered as a fixed dose over time.  To adjust the rate of infusion, the rate rather than the dose can be adjusted i.e. from 30 minutes to 45 or 50 minutes.  The maximum limit is that described in the reference card, but a slower rate can be chosen if factors such as hypotension are concerning the clinician.</p>
         <p>An infusion can be stopped at any time by pressing the Start/Stop button. It can be resumed by pressing the button again.</p>`,
         undefined),
     new DriverEntry("Changing the rate of infusion once started",
-        `<p>Whilst an infusion is running, pushing the left arrow button will allow the user to alter the rate of administration.  Choosing a rate that exceeds those of the reference card will be met with a prompt, to confirm the selection.  The library has hard and soft limits for administration rates.  Exceeding a soft limit will result in the aforementioned prompt, whilst users cannot actually select a rate that exceeds the hard limit.  The soft limits are designed to allow clinicians to continue to run infusions in situations that sit beyond what is normally encountered, but help prevent users inadvertently selecting a greatly increased rate of infusion.  The programmed limits do not replace clinical judgment and best medication management practice.</p>
+        `
+        <img src="images/driver/ChangeInfusionRate.png" alt="Changing the rate of infusion">
+        <p>Whilst an infusion is running, pushing the left arrow button will allow the user to alter the rate of administration.  Choosing a rate that exceeds those of the reference card will be met with a prompt, to confirm the selection.  The library has hard and soft limits for administration rates.  Exceeding a soft limit will result in the aforementioned prompt, whilst users cannot actually select a rate that exceeds the hard limit.  The soft limits are designed to allow clinicians to continue to run infusions in situations that sit beyond what is normally encountered, but help prevent users inadvertently selecting a greatly increased rate of infusion.  The programmed limits do not replace clinical judgment and best medication management practice.</p>
         `,
         undefined),
     new DriverEntry("Boluses",
@@ -38,6 +45,7 @@ const driver_entries = [
         `<p>Pressing the (up arrow) or (down arrow) buttons during operation will allow the user to see several useful parameters and values about the infusion, such as the total volume, amount, duration and remaining time until depletion of the syringe.</p>
         <p>Pressure</p>
         <p>The Perfusor&reg; Space monitors the pressure required to depress the syringe and displays this via the following graphic on the status screen</p>
+        <img src="images/driver/Status.jpg" alt="Pressure required to depress the syringe">
         <p>In this graphic, the dotted line represents the pressure alarm level, i.e. the amount of pressure that the device will tolerate before alarming, and the top solid bar represents the current pressure level.  In this instance, it shows an alarm level of 6, and a current pressure that is about 30% of pressure level 6.</p>
         <p>The pressure needed to administer an infusion may vary.  Smaller cannulas, restricted venous flow, or intraosseous cannulas may cause the pressure to rise.  It is best to check for factors like line occlusion, bent limbs, or extravasation before deciding to increase the pressure level.</p>
         `,
