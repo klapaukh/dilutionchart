@@ -127,8 +127,18 @@ const full_data = [
         "Ketamine",
         "Adult Analgesia",
         "rgb(254,255,0)",
-        "<ul><li>80kg plus: 30mg (0.3mL) made to 30mL with 0.9% NaCl</li><li>50 - 80kg: 20mg (0.2mL) made to 30mL with 0.9% NaCl</li></ul>",
-        "<ul><li>80kg plus: 1mg/ml</li><li>50 - 80kg: 0.6mg/ml</li></ul>",
+        `
+        100mg in 100ml of 5% Dextrose
+        <ul>
+        <li>50kg: 12.5mg/12.5ml</li>
+        <li>60kg: 15mg/15ml</li>
+        <li>70kg: 17.5mg/17.5ml</li>
+        <li>80kg: 20mg/20ml</li>
+        <li>90kg: 22.5mg/22ml</li>
+        <li>100+kg: 25mg/25ml</li>
+        </ul>
+        & dilute to 30ml with 0.9% NaCl`,
+        "1mg/ml",
         "30mls over 15mins (120ml/hr)",
         "PRN",
         [],
